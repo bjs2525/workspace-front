@@ -5,7 +5,33 @@
         <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
         <title>스타일시트</title>
         <!-- 스타일시트자리 -->
-         table 
+        <style>
+            table{
+                border-collapse: collapse;
+                text-align: center;
+                border: 3px solid #000000;
+            }
+            thead{
+                background-color: #d5d5d5;
+            }
+            th, td{
+                border: 1px solid #000000;
+            }
+            tr{
+                border: 1px solid #000000;
+            }
+
+            tbody>tr:hover{
+                background-color: #ffff00;
+            }
+
+            
+
+         
+            
+            
+
+        </style>
     </head>
 
     <body>
@@ -13,6 +39,63 @@
         <h2>게시판</h2>
         <h3>일반게시판</h3>
         <h4>리스트</h4>
+
+        <table>
+            <colgroup>
+            
+            <col style="width: 50px;">
+            <col style="width: 300px;">
+            <col style="width: 80px;">
+            <col style="width: 80px;">
+            <col style="width: 100px;">
+            <col style="width: 50px;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>글쓴이</th>
+                    <th>조회수</th>
+                    <th>작성일</th>
+                    <th>관리</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>123</td>
+                    <td class="txt-1">01년생 대표 이쁜이입니다</td>
+                    <td>배정식</td>
+                    <td>365만</td>
+                    <td>2025-04-03</td>
+                    <td>보류</td>
+                </tr>
+                <tr>
+                    <td>124</td>
+                    <td class="txt-1">01년생 대표 귀요미입니다</td>
+                    <td>배정식</td>
+                    <td>432만</td>
+                    <td>2025-04-02</td>
+                    <td>승인</td>
+                </tr>
+                <tr>
+                    <td>125</td>
+                    <td class="txt-1">01년생 대표 멋쟁이입니다</td>
+                    <td>배정식</td>
+                    <td>284만</td>
+                    <td>2025-04-01</td>
+                    <td>승인</td>
+                </tr>
+
+
+
+
+
+            </tbody>
+
+
+
+        </table>
 
         
 
